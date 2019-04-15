@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4a203c0a-8ff0-4f10-a4b5-30888b8e0628</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>playerAIConnect4.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="playerAIConnect4.py" />
+    <Compile Include="c4.py" />
+    <Compile Include="c4_game.py" />
+    <Compile Include="c4_model.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dqn_performance_analysis.ipynb" />
+    <Content Include="LICENSE" />
+    <Content Include="README.md" />
+    <Content Include="snapshots\current_best.h5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="snapshots\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
